@@ -1,0 +1,80 @@
+body {
+    background-color: darkslategray;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#characters-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centre les carte horizontalement */
+    gap: 20px; 
+}
+
+.character-card {
+    background-color: darkgray;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px; /* Réduis la largeur des cartes */
+    cursor: pointer;
+    transition: transform 0.2s;
+    overflow: hidden;
+}
+
+.character-card:hover {
+    transform: scale(1.05);
+}
+
+.character-card img {
+    width: 100%;
+    height: auto;
+}
+
+.character-info {
+    padding: 10px;
+}
+
+.character-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.character-house {
+    font-size: 16px;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.character-card {
+    animation: fadeIn 1s ease-out;
+    
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.menu a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    background-color: darkgray;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.menu a:hover { /*transition fondu*/
+    transform: scale(1.1); 
+    transition: transform 0.2s ease-in-out; 
+}
+
+

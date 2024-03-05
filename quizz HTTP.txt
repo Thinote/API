@@ -1,0 +1,7 @@
+-POST
+
+-PUT
+
+-GET
+
+-DELETE
